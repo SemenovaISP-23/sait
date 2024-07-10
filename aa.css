@@ -1,0 +1,31 @@
+@media only screen and (max-width: 750px) {
+    body {
+      background-color: black;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    #text {
+        /* Я знаю, что у тебя день рождение */
+
+
+        width: 334px;
+        height: 94px;
+        left: 208px;
+        top: 731px;
+
+        font-family: 'Pixeloid Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+
+
+
+
+
+    }
+  }

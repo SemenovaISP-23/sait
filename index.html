@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aa.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <base href="https://www.example.com/">
+</head>
+<body>
+  <p id="text">Я знаю, что у тебя день рождения</p>
+ 
+  <script>
+      // Массив с текстами
+      const texts = [ "Поэтому хочу поздравить тебя", "Пусть этот сайт станет моим вечным поздравлением тебе","Я знаю, что у тебя день рождения"];
+    
+    // Индекс текущего текста
+    let index = 0;
+    
+    // Функция смены текста
+    function changeText() {
+      // Получение элемента с текстом
+      const textElement = document.getElementById("text");
+      
+      // Установка нового текста
+      textElement.textContent = texts[index];
+      
+      // Увеличение индекса
+      index++;
+      
+     // Если индекс достиг конца массива, сбросить его
+     if (index >= texts.length) {
+        // Спрятать текст
+        textElement.style.display = "none";
+      }
+    }
+    
+    // Запуск функции смены текста с интервалом в 5 секунд
+    setInterval(changeText, 5000);
+
+
+// Функция для изменения фона
+function changeBackgroundColor() {
+    // Получаем элемент body
+    var body = document.body;
+
+    // Меняем фон на фиолетовый
+    body.style.backgroundColor = '#A04AF3';
+}
+
+// Запускаем таймер, который вызовет функцию через 15 секунд
+setTimeout(changeBackgroundColor, 15000);
+
+</script> 
+</body>
+</html>
